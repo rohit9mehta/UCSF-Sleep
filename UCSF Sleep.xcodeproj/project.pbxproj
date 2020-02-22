@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E19211612401F4DE006FFE27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19211602401F4DE006FFE27 /* AppDelegate.swift */; };
+		E19211632401F4DE006FFE27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19211622401F4DE006FFE27 /* SceneDelegate.swift */; };
+		E19211652401F4DE006FFE27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19211642401F4DE006FFE27 /* ContentView.swift */; };
+		E19211672401F4E0006FFE27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19211662401F4E0006FFE27 /* Assets.xcassets */; };
+		E192116A2401F4E0006FFE27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19211692401F4E0006FFE27 /* Preview Assets.xcassets */; };
+		E192116D2401F4E0006FFE27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E192116B2401F4E0006FFE27 /* LaunchScreen.storyboard */; };
+		E19211782401F4E0006FFE27 /* UCSF_SleepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19211772401F4E0006FFE27 /* UCSF_SleepTests.swift */; };
+		E19211832401F4E0006FFE27 /* UCSF_SleepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19211822401F4E0006FFE27 /* UCSF_SleepUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E19211742401F4E0006FFE27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E19211552401F4DE006FFE27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E192115C2401F4DE006FFE27;
+			remoteInfo = "UCSF Sleep";
+		};
+		E192117F2401F4E0006FFE27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E19211552401F4DE006FFE27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E192115C2401F4DE006FFE27;
+			remoteInfo = "UCSF Sleep";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E192115D2401F4DE006FFE27 /* UCSF Sleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UCSF Sleep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19211602401F4DE006FFE27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E19211622401F4DE006FFE27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E19211642401F4DE006FFE27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E19211662401F4E0006FFE27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E19211692401F4E0006FFE27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E192116C2401F4E0006FFE27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E192116E2401F4E0006FFE27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E19211732401F4E0006FFE27 /* UCSF SleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UCSF SleepTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19211772401F4E0006FFE27 /* UCSF_SleepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCSF_SleepTests.swift; sourceTree = "<group>"; };
+		E19211792401F4E0006FFE27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E192117E2401F4E0006FFE27 /* UCSF SleepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UCSF SleepUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19211822401F4E0006FFE27 /* UCSF_SleepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCSF_SleepUITests.swift; sourceTree = "<group>"; };
+		E19211842401F4E0006FFE27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E192115A2401F4DE006FFE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E19211702401F4E0006FFE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E192117B2401F4E0006FFE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E19211542401F4DE006FFE27 = {
+			isa = PBXGroup;
+			children = (
+				E192115F2401F4DE006FFE27 /* UCSF Sleep */,
+				E19211762401F4E0006FFE27 /* UCSF SleepTests */,
+				E19211812401F4E0006FFE27 /* UCSF SleepUITests */,
+				E192115E2401F4DE006FFE27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E192115E2401F4DE006FFE27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E192115D2401F4DE006FFE27 /* UCSF Sleep.app */,
+				E19211732401F4E0006FFE27 /* UCSF SleepTests.xctest */,
+				E192117E2401F4E0006FFE27 /* UCSF SleepUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E192115F2401F4DE006FFE27 /* UCSF Sleep */ = {
+			isa = PBXGroup;
+			children = (
+				E19211602401F4DE006FFE27 /* AppDelegate.swift */,
+				E19211622401F4DE006FFE27 /* SceneDelegate.swift */,
+				E19211642401F4DE006FFE27 /* ContentView.swift */,
+				E19211662401F4E0006FFE27 /* Assets.xcassets */,
+				E192116B2401F4E0006FFE27 /* LaunchScreen.storyboard */,
+				E192116E2401F4E0006FFE27 /* Info.plist */,
+				E19211682401F4E0006FFE27 /* Preview Content */,
+			);
+			path = "UCSF Sleep";
+			sourceTree = "<group>";
+		};
+		E19211682401F4E0006FFE27 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E19211692401F4E0006FFE27 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E19211762401F4E0006FFE27 /* UCSF SleepTests */ = {
+			isa = PBXGroup;
+			children = (
+				E19211772401F4E0006FFE27 /* UCSF_SleepTests.swift */,
+				E19211792401F4E0006FFE27 /* Info.plist */,
+			);
+			path = "UCSF SleepTests";
+			sourceTree = "<group>";
+		};
+		E19211812401F4E0006FFE27 /* UCSF SleepUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E19211822401F4E0006FFE27 /* UCSF_SleepUITests.swift */,
+				E19211842401F4E0006FFE27 /* Info.plist */,
+			);
+			path = "UCSF SleepUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E192115C2401F4DE006FFE27 /* UCSF Sleep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E19211872401F4E0006FFE27 /* Build configuration list for PBXNativeTarget "UCSF Sleep" */;
+			buildPhases = (
+				E19211592401F4DE006FFE27 /* Sources */,
+				E192115A2401F4DE006FFE27 /* Frameworks */,
+				E192115B2401F4DE006FFE27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UCSF Sleep";
+			productName = "UCSF Sleep";
+			productReference = E192115D2401F4DE006FFE27 /* UCSF Sleep.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E19211722401F4E0006FFE27 /* UCSF SleepTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E192118A2401F4E0006FFE27 /* Build configuration list for PBXNativeTarget "UCSF SleepTests" */;
+			buildPhases = (
+				E192116F2401F4E0006FFE27 /* Sources */,
+				E19211702401F4E0006FFE27 /* Frameworks */,
+				E19211712401F4E0006FFE27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E19211752401F4E0006FFE27 /* PBXTargetDependency */,
+			);
+			name = "UCSF SleepTests";
+			productName = "UCSF SleepTests";
+			productReference = E19211732401F4E0006FFE27 /* UCSF SleepTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E192117D2401F4E0006FFE27 /* UCSF SleepUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E192118D2401F4E0006FFE27 /* Build configuration list for PBXNativeTarget "UCSF SleepUITests" */;
+			buildPhases = (
+				E192117A2401F4E0006FFE27 /* Sources */,
+				E192117B2401F4E0006FFE27 /* Frameworks */,
+				E192117C2401F4E0006FFE27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E19211802401F4E0006FFE27 /* PBXTargetDependency */,
+			);
+			name = "UCSF SleepUITests";
+			productName = "UCSF SleepUITests";
+			productReference = E192117E2401F4E0006FFE27 /* UCSF SleepUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E19211552401F4DE006FFE27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "UCSF Sleep Team";
+				TargetAttributes = {
+					E192115C2401F4DE006FFE27 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					E19211722401F4E0006FFE27 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E192115C2401F4DE006FFE27;
+					};
+					E192117D2401F4E0006FFE27 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E192115C2401F4DE006FFE27;
+					};
+				};
+			};
+			buildConfigurationList = E19211582401F4DE006FFE27 /* Build configuration list for PBXProject "UCSF Sleep" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E19211542401F4DE006FFE27;
+			productRefGroup = E192115E2401F4DE006FFE27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E192115C2401F4DE006FFE27 /* UCSF Sleep */,
+				E19211722401F4E0006FFE27 /* UCSF SleepTests */,
+				E192117D2401F4E0006FFE27 /* UCSF SleepUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E192115B2401F4DE006FFE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E192116D2401F4E0006FFE27 /* LaunchScreen.storyboard in Resources */,
+				E192116A2401F4E0006FFE27 /* Preview Assets.xcassets in Resources */,
+				E19211672401F4E0006FFE27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E19211712401F4E0006FFE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E192117C2401F4E0006FFE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E19211592401F4DE006FFE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E19211612401F4DE006FFE27 /* AppDelegate.swift in Sources */,
+				E19211632401F4DE006FFE27 /* SceneDelegate.swift in Sources */,
+				E19211652401F4DE006FFE27 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E192116F2401F4E0006FFE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E19211782401F4E0006FFE27 /* UCSF_SleepTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E192117A2401F4E0006FFE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E19211832401F4E0006FFE27 /* UCSF_SleepUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E19211752401F4E0006FFE27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E192115C2401F4DE006FFE27 /* UCSF Sleep */;
+			targetProxy = E19211742401F4E0006FFE27 /* PBXContainerItemProxy */;
+		};
+		E19211802401F4E0006FFE27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E192115C2401F4DE006FFE27 /* UCSF Sleep */;
+			targetProxy = E192117F2401F4E0006FFE27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E192116B2401F4E0006FFE27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E192116C2401F4E0006FFE27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E19211852401F4E0006FFE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E19211862401F4E0006FFE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E19211882401F4E0006FFE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"UCSF Sleep/Preview Content\"";
+				DEVELOPMENT_TEAM = CR9UD8DMN8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "UCSF Sleep/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohitmehta.UCSF-Sleep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E19211892401F4E0006FFE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"UCSF Sleep/Preview Content\"";
+				DEVELOPMENT_TEAM = CR9UD8DMN8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "UCSF Sleep/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohitmehta.UCSF-Sleep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E192118B2401F4E0006FFE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CR9UD8DMN8;
+				INFOPLIST_FILE = "UCSF SleepTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohitmehta.UCSF-SleepTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UCSF Sleep.app/UCSF Sleep";
+			};
+			name = Debug;
+		};
+		E192118C2401F4E0006FFE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CR9UD8DMN8;
+				INFOPLIST_FILE = "UCSF SleepTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohitmehta.UCSF-SleepTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UCSF Sleep.app/UCSF Sleep";
+			};
+			name = Release;
+		};
+		E192118E2401F4E0006FFE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CR9UD8DMN8;
+				INFOPLIST_FILE = "UCSF SleepUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohitmehta.UCSF-SleepUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UCSF Sleep";
+			};
+			name = Debug;
+		};
+		E192118F2401F4E0006FFE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CR9UD8DMN8;
+				INFOPLIST_FILE = "UCSF SleepUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohitmehta.UCSF-SleepUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UCSF Sleep";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E19211582401F4DE006FFE27 /* Build configuration list for PBXProject "UCSF Sleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E19211852401F4E0006FFE27 /* Debug */,
+				E19211862401F4E0006FFE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E19211872401F4E0006FFE27 /* Build configuration list for PBXNativeTarget "UCSF Sleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E19211882401F4E0006FFE27 /* Debug */,
+				E19211892401F4E0006FFE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E192118A2401F4E0006FFE27 /* Build configuration list for PBXNativeTarget "UCSF SleepTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E192118B2401F4E0006FFE27 /* Debug */,
+				E192118C2401F4E0006FFE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E192118D2401F4E0006FFE27 /* Build configuration list for PBXNativeTarget "UCSF SleepUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E192118E2401F4E0006FFE27 /* Debug */,
+				E192118F2401F4E0006FFE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E19211552401F4DE006FFE27 /* Project object */;
+}

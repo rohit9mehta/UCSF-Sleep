@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		E192116D2401F4E0006FFE27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E192116B2401F4E0006FFE27 /* LaunchScreen.storyboard */; };
 		E19211782401F4E0006FFE27 /* UCSF_SleepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19211772401F4E0006FFE27 /* UCSF_SleepTests.swift */; };
 		E19211832401F4E0006FFE27 /* UCSF_SleepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19211822401F4E0006FFE27 /* UCSF_SleepUITests.swift */; };
+		E19211922401F55D006FFE27 /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = E19211912401F55D006FFE27 /* CareKitUI */; };
+		E19211942401F55D006FFE27 /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = E19211932401F55D006FFE27 /* CareKit */; };
+		E19211962401F55D006FFE27 /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = E19211952401F55D006FFE27 /* CareKitStore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19211942401F55D006FFE27 /* CareKit in Frameworks */,
+				E19211922401F55D006FFE27 /* CareKitUI in Frameworks */,
+				E19211962401F55D006FFE27 /* CareKitStore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +158,11 @@
 			dependencies = (
 			);
 			name = "UCSF Sleep";
+			packageProductDependencies = (
+				E19211912401F55D006FFE27 /* CareKitUI */,
+				E19211932401F55D006FFE27 /* CareKit */,
+				E19211952401F55D006FFE27 /* CareKitStore */,
+			);
 			productName = "UCSF Sleep";
 			productReference = E192115D2401F4DE006FFE27 /* UCSF Sleep.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +235,9 @@
 				Base,
 			);
 			mainGroup = E19211542401F4DE006FFE27;
+			packageReferences = (
+				E19211902401F55D006FFE27 /* XCRemoteSwiftPackageReference "CareKit" */,
+			);
 			productRefGroup = E192115E2401F4DE006FFE27 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -594,6 +608,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E19211902401F55D006FFE27 /* XCRemoteSwiftPackageReference "CareKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/carekit-apple/CareKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E19211912401F55D006FFE27 /* CareKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E19211902401F55D006FFE27 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitUI;
+		};
+		E19211932401F55D006FFE27 /* CareKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E19211902401F55D006FFE27 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKit;
+		};
+		E19211952401F55D006FFE27 /* CareKitStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E19211902401F55D006FFE27 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E19211552401F4DE006FFE27 /* Project object */;
 }

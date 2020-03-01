@@ -33,18 +33,6 @@ class InsightsDataManager {
   var Qualityscore: Double = 0
   var Overallquality: [Double] = []
 
-  for i in 0..<QualityData.count {
-    qualityscore = QualityData[i] * DurationData[i] / 80
-    if DurationData[i] > 9 {
-      qualityscore -= DurationData[i]/50
-    }
-    if qualityscore > 1 {
-      Overallquality.append(100)
-    } else {
-      Overallquality.append(qualityscore)
-    }
-    
-  }
 
   var qualitySeries: OCKBarSeries {
     let qualityValues = Overallquality.map({ NSNumber(value:$0.value) })
@@ -83,23 +71,23 @@ class InsightsDataManager {
       let startDateComponents = DateComponents.firstDateOfCurrentWeek
       let endDateComponents = Calendar.current.dateComponents([.day, .month, .year], from: Date())
       
-      guard let pulseActivity = self.findActivityWith(ActivityIdentifier.pulse) else { return }
-      self.fetchActivityResultsFor(pulseActivity, startDate: startDateComponents,
+      guard let DurationActivity = self.findActivityWith(ActivityIdentifier.duration) else { return }
+      self.fetchActivityResultsFor(durationctivity, startDate: startDateComponents,
                                    endDate: endDateComponents) { (fetchedData) in
-                                    self.pulseData = fetchedData
+                                    self.durationData = fetchedData
       }
       
-      guard let temperatureActivity = self.findActivityWith(ActivityIdentifier.temperature) else { return }
-      self.fetchActivityResultsFor(temperatureActivity, startDate: startDateComponents,
+      guard let qualityActivity = self.findActivityWith(ActivityIdentifier.quality) else { return }
+      self.fetchActivityResultsFor(qualityActivity, startDate: startDateComponents,
                                    endDate: endDateComponents) { (fetchedData) in
-                                    self.temperatureData = fetchedData
+                                    self.qualityData = fetchedData
       }
 
       self.fetchDailyCompletion(startDate: startDateComponents, endDate: endDateComponents)
       
       // Once all data is gathered, process and return it
       self.gatherDataGroup.notify(queue: DispatchQueue.main, execute: {
-        let insightItems = self.produceInsightsForAdherence()
+        let insightItems = self.produceInsightsForQuality()
         completion(true, insightItems)
       })
     }
@@ -131,6 +119,20 @@ class InsightsDataManager {
       return DateFormatter.localizedString(from: date, dateStyle: .short, timeStyle: .none)
     })
     
+    for i in 0..<QualityData.count {
+      qualityscore = QualityData[i] * DurationData[i] / 80
+      if DurationData[i] > 9 {
+        qualityscore -= DurationData[i]/50
+      }
+      if qualityscore > 1 {
+        Overallquality.append(100)
+      } else {
+        Overallquality.append(qualityscore*100)
+      }
+    }
+
+//would have to include picture somewhere here!!!
+
     // Create chart from completion and assessment series
     let chart = OCKBarChart(
       title: "Sleep Quality per Day",

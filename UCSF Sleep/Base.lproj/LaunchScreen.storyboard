@@ -1,25 +1,265 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hNm-un-TXd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <!--Progress-->
+        <scene sceneID="aGa-fQ-cux">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="H6R-3r-Lpo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0We-a9-YTk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.8867929819" green="0.8867929819" blue="0.8867929819" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="0vb-gX-dPP"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Progress" image="chart.bar" catalog="system" id="KJV-6c-JUX"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Z3-vj-eUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="54" y="216"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="5lX-DO-pRX">
+            <objects>
+                <viewController id="tuO-La-v1B" sceneMemberID="viewController">
+                    <view key="view" contentMode="center" id="rr1-1S-Upw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zSY-bB-z8R">
+                                <rect key="frame" x="62" y="58" width="427" height="371"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="center" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gzT-iH-SNX">
+                                        <rect key="frame" x="79.5" y="0.0" width="268" height="158"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Pic&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwj-fD-2L8">
+                                                <rect key="frame" x="0.0" y="69" width="130" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AZt-DQ-zfP">
+                                                <rect key="frame" x="138" y="0.0" width="130" height="158"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="You Had Healthy Sleep For" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jDL-sT-veD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="128"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gql-Fj-1M0">
+                                                        <rect key="frame" x="0.0" y="128" width="130" height="30"/>
+                                                        <state key="normal" title="Check In"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cs7-Dj-bQG">
+                                        <rect key="frame" x="118" y="166" width="191.5" height="24"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="chart.pie.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jHT-xf-MBR">
+                                                <rect key="frame" x="0.0" y="0.5" width="19.5" height="23"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Sleep Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMZ-Ba-Tf1">
+                                                <rect key="frame" x="29.5" y="0.0" width="127" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8K-fj-4gc">
+                                                <rect key="frame" x="166.5" y="0.0" width="25" height="24"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zTW-cl-yzX">
+                                        <rect key="frame" x="118" y="198" width="191.5" height="24"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="chart.pie.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zRU-Ko-9tw">
+                                                <rect key="frame" x="0.0" y="0.5" width="19.5" height="23"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Sleep Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLq-gM-8ig">
+                                                <rect key="frame" x="29.5" y="0.0" width="127" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEV-Y3-HJN">
+                                                <rect key="frame" x="166.5" y="0.0" width="25" height="24"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LDS-kE-mpA">
+                                        <rect key="frame" x="81" y="230" width="265" height="50.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kku-Ig-nh5">
+                                                <rect key="frame" x="0.0" y="0.0" width="265" height="20.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="chart.pie.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fA7-Rr-x8o">
+                                                        <rect key="frame" x="0.0" y="0.5" width="19.5" height="19.5"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How was your sleep last night?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTw-Ov-hGf">
+                                                        <rect key="frame" x="29.5" y="0.0" width="235.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7ap-bO-co7">
+                                                <rect key="frame" x="0.0" y="20.5" width="265" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cex-Q8-qDv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="38" height="30"/>
+                                                        <state key="normal" title="Good"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zps-ET-EVd">
+                                                        <rect key="frame" x="233" y="0.0" width="32" height="30"/>
+                                                        <state key="normal" title="Poor"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cz8-ul-cbe">
+                                        <rect key="frame" x="0.0" y="288.5" width="427" height="44.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amb-MX-B3Z">
+                                                <rect key="frame" x="0.0" y="0.0" width="427" height="20.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="My Sleep Therapy">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Ua-Qg-IZ6">
+                                                <rect key="frame" x="0.0" y="20.5" width="427" height="24"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="chart.pie.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YBD-Yq-MJu">
+                                                        <rect key="frame" x="0.0" y="0.5" width="19.5" height="23"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWC-bp-s24">
+                                                        <rect key="frame" x="29.5" y="0.0" width="362.5" height="24"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Click to Setup Your Personalized Sleep Therapy">
+                                                                <attributes>
+                                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vg-b3-JKi">
+                                                        <rect key="frame" x="402" y="0.0" width="25" height="24"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCe-eQ-iZJ">
+                                        <rect key="frame" x="190.5" y="341" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88679298187166911" green="0.88679298187166911" blue="0.88679298187166911" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="jaP-QG-WbJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="AHj-Fg-5t2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJh-ws-l2u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="917.41071428571422"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="yEG-EQ-NNa">
+            <objects>
+                <viewController id="KaB-tb-Voq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xh5-3v-Aih">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.8867929819" green="0.8867929819" blue="0.8867929819" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="rFr-lj-b1m"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Me" image="person" catalog="system" id="pGc-Xh-f1M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vBo-XN-lUq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16" y="1600"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="slR-QL-ZUO">
+            <objects>
+                <tabBarController id="hNm-un-TXd" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yoq-7f-Wqn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Hpn-yR-baN" kind="relationship" relationship="viewControllers" id="tgM-zc-L3F"/>
+                        <segue destination="H6R-3r-Lpo" kind="relationship" relationship="viewControllers" id="ALs-gL-93C"/>
+                        <segue destination="tuO-La-v1B" kind="relationship" relationship="viewControllers" id="pPY-Wg-eOA"/>
+                        <segue destination="YHx-Oa-eqN" kind="relationship" relationship="viewControllers" id="kuG-iB-JRN"/>
+                        <segue destination="KaB-tb-Voq" kind="relationship" relationship="viewControllers" id="ZZQ-G1-0xQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="No7-mQ-Hhs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="918"/>
+        </scene>
+        <!--Resources-->
+        <scene sceneID="d7Z-Sp-kZ3">
+            <objects>
+                <viewController id="Hpn-yR-baN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NVe-Q3-Y58">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.8867929819" green="0.8867929819" blue="0.8867929819" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="lsc-yc-bp7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Resources" image="book" catalog="system" id="iZE-Sa-I2h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5w-dm-tqk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813" y="924"/>
+        </scene>
+        <!--Store-->
+        <scene sceneID="q8o-ya-2ld">
+            <objects>
+                <viewController id="YHx-Oa-eqN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pZt-Qm-Eo2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.8867929819" green="0.8867929819" blue="0.8867929819" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="vq2-e9-phW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Store" image="bag" catalog="system" id="oM2-ZA-HQy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Dt-OA-gyA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-942" y="1001"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bag" catalog="system" width="64" height="64"/>
+        <image name="book" catalog="system" width="64" height="50"/>
+        <image name="chart.bar" catalog="system" width="64" height="44"/>
+        <image name="chart.pie.fill" catalog="system" width="64" height="62"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+    </resources>
 </document>
